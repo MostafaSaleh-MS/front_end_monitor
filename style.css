@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(216, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 288px;
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 7px 20px 0px hsl(0deg 0% 0% / 30%);
+}
+
+.preview {
+    width: calc(100% - 7.5px);
+    margin-top: 5px;
+    position: relative;
+}
+
+.preview img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.preview:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.preview .hover .bg {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    background-color: hsl(178deg 100% 50% / 49%);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.preview .hover img {
+    position: absolute;
+    width: 40px;
+    top: 114px;
+    left: 105px;
+    visibility: hidden;
+}
+
+.preview:hover .hover img, .preview:hover .hover .bg {
+    visibility:visible;
+}
+
+.discription h3 {
+    color: white;
+    width: fit-content;
+}
+
+.discription h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.discription p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.info {
+    width: calc(100% - 7.5px);
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    position: relative;
+}
+
+.credit span {
+    color: hsl(178, 100%, 50%);
+    font-size: 16px;
+    margin-left: 20px;
+}
+.time span {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.info .credit img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.info .time img {
+    position: absolute;
+    top: 1px;
+    right: 79px;
+}
+
+hr {
+    width: calc(100% - 7.5px);
+    color: hsl(215, 32%, 27%);
+    opacity: 0.2;
+    margin: 20px 0px;
+}
+
+.profile {
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.profile span:first-of-type {
+    color: hsl(215, 51%, 70%);
+    font-weight: 600;
+    position: absolute;
+    top: 8px;
+    left: 42px;
+    font-size: 12px;
+}
+.profile span:last-of-type {
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 8px;
+    left: 110px;
+    font-size: 12px;
+}
+.profile span:last-of-type:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
